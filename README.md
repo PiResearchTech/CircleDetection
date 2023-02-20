@@ -16,6 +16,7 @@ Procedure:
 A few resources to get you started if this is your first Flutter project:
 
 - [Video: Flutter App Video link](https://youtu.be/T0PYImC7Z7k)
+[![Watch the video]](https://youtu.be/T0PYImC7Z7k)
 
 
 For help getting started with Flutter, view our
