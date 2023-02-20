@@ -1,0 +1,68 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+NoSuchMethodError: NoSuchMethodError: The getter 'assetPathsToEvict' was called on null.
+Receiver: null
+Tried calling: assetPathsToEvict
+
+```
+#0      Object.noSuchMethod (dart:core-patch/object_patch.dart:68:5)
+#1      HotRunner._resetDirtyAssets (package:flutter_tools/src/run_hot.dart:510:20)
+#2      HotRunner._restartFromSources (package:flutter_tools/src/run_hot.dart:578:5)
+<asynchronous suspension>
+#3      HotRunner._fullRestartHelper (package:flutter_tools/src/run_hot.dart:754:16)
+<asynchronous suspension>
+#4      HotRunner.restart (package:flutter_tools/src/run_hot.dart:701:38)
+<asynchronous suspension>
+#5      TerminalHandler._commonTerminalInputHandler (package:flutter_tools/src/resident_runner.dart:1640:40)
+<asynchronous suspension>
+#6      TerminalHandler.processTerminalInput (package:flutter_tools/src/resident_runner.dart:1680:7)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 2.8.1, on Microsoft Windows [Version 10.0.19043.1645], locale en-US)
+    • Flutter version 2.8.1 at C:\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision 77d935af4d (4 months ago), 2021-12-16 08:37:33 -0800
+    • Engine revision 890a5fca2e
+    • Dart version 2.15.1
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 31.0.0)
+    • Android SDK at C:\Users\Hi\AppData\Local\Android\Sdk
+    • Platform android-32, build-tools 31.0.0
+    • ANDROID_HOME = C:\Program Files\Android
+    • Java binary at: C:\Program Files\Android\Android Studio\jre\bin\java
+    • Java version OpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)
+    • All Android licenses accepted.
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[✓] Android Studio (version 2020.3)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    • Flutter plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/9212-flutter
+    • Dart plugin can be installed from:
+      🔨 https://plugins.jetbrains.com/plugin/6351-dart
+    • Java version OpenJDK Runtime Environment (build 11.0.10+0-b96-7249189)
+
+[✓] VS Code (version 1.66.2)
+    • VS Code at C:\Users\Hi\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.38.1
+
+[✓] Connected device (3 available)
+    • GIONEE MAX (mobile) • 192.168.18.11:5555 • android-arm64  • Android 10 (API 29)
+    • Chrome (web)        • chrome             • web-javascript • Google Chrome 100.0.4896.127
+    • Edge (web)          • edge               • web-javascript • Microsoft Edge 100.0.1185.50
+
+• No issues found!
+```
